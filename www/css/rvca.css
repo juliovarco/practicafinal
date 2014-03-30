@@ -1,0 +1,73 @@
+.centrarimagen{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin: auto;
+	height:100%;
+	width: 100%;
+}
+.background{
+	background-color: #FFFFFF;
+	color: #F4F4F4;
+}
+.centrar{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin: auto;
+}
+.botoon{
+	position: absolute;
+	top:92%;
+	left:0;
+	right:0;
+	bottom:0;
+	margin: auto;
+	width: 25%;
+}
+.botonmen{
+	position: absolute;
+	top:0;
+	left:0;
+	right:50%;
+	bottom:93%;
+	margin: auto;
+	width: 50%;
+	height: 7%;
+}
+.botonwomen{
+	position: absolute;
+	top:0;
+	left:50%;
+	right:0;
+	bottom:93%;
+	margin: auto;
+	width: 50%;
+	height: 7%;
+}
+
+.botonwomenselected{
+	position: absolute;
+	top:0;
+	left:0;
+	right:50%;
+	bottom:93%;
+	margin: auto;
+	width: 50%;
+	height: 7%;
+}
+
+.botonmenselected{
+	position: absolute;
+	top:0;
+	left:50%;
+	right:0;
+	bottom:93%;
+	margin: auto;
+	width: 50%;
+	height: 7%;
+}

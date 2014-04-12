@@ -297,7 +297,7 @@ section > footer > nav > a:active {
   box-shadow: inset 0 0.3em #00afe3;
 }
 nav[data-control=menu] {
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(255,245,0,0.9);
   -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.1);
   -moz-box-shadow: 0 2px 0 rgba(0,0,0,0.1);
   -ms-box-shadow: 0 2px 0 rgba(0,0,0,0.1);
@@ -306,7 +306,7 @@ nav[data-control=menu] {
 }
 nav[data-control=menu].icons > a,
 nav[data-control=menu].icons > a > abbr {
-  color: #595959;
+  color: #303030;
 }
 nav[data-control=menu].icons > a > .icon {
   color: #fff;
@@ -360,11 +360,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
   box-shadow: inset 0 -1px #464646, 0 1px rgba(0,0,0,0.1);
 }
 body > section > header .title {
-  -webkit-text-shadow: 0 0.1em #009ecc;
-  -moz-text-shadow: 0 0.1em #009ecc;
-  -ms-text-shadow: 0 0.1em #009ecc;
-  -o-text-shadow: 0 0.1em #009ecc;
-  text-shadow: 0 0.1em #009ecc;
+  -webkit-text-shadow: 0 0.1em #000000;
+  -moz-text-shadow: 0 0.1em #000000;
+  -ms-text-shadow: 0 0.1em #000000;
+  -o-text-shadow: 0 0.1em #000000;
+  text-shadow: 0 0.1em #000000;
 }
 body > section > nav[data-control=groupbar] {
   -webkit-box-shadow: 0 1px rgba(0,0,0,0.1);
@@ -479,7 +479,7 @@ article .button,
 article button,
 article .button abbr,
 article button abbr {
-  color: #fff;
+  color: #636363;
   font-weight: 600;
   -webkit-text-shadow: 0 1px rgba(0,0,0,0.1);
   -moz-text-shadow: 0 1px rgba(0,0,0,0.1);
@@ -514,7 +514,7 @@ article button .icon {
 }
 article button,
 article .button {
-  background-color: #0095c1;
+  background-color: #f2e612;
 }
 article button.color,
 article .button.color {

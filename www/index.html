@@ -42,33 +42,86 @@
     <body>
             <section id="index" data-transition="fade">
                 <article id="main" class="background">
-                    <img src="./img/MENU_COLOR_WEB.jpg" data-view-section="menu" class="centrarimagen">
+                    <img src="./img/MENU_ENTRADA.jpg" data-view-section="menu" class="centrarimagen">
                 </article>
             </section>
     <aside id="asidemen">
-                    <header data-title="opciones"></header>
+            <header data-title="MEN"></header>
                 <article id="datos" class="active indented">
-                 <ul>
-                    <li>
+                    <img src="./img/ACCESSORIES.png" data-view-section="accesoriosm"> 
+                    <img src="./img/CLOTHING.png"  data-view-section="ropam"> 
+                </article>
+    </aside>
 
-                    </li>
-                 </ul>  
-                </article>
-    </aside>
-    <aside id="asidewomen">
-                    <header data-title="opciones"></header>
+    <aside id="asidewomen" data-transition="right">
+            <header data-title="WOMEN"></header>
                 <article id="datos" class="active indented">
-                    Hello Bitch!
+                    <img src="./img/ACCESSORIES.png" data-view-section="accesoriosw" class="on-left">
+                    <img src="./img/CLOTHING.png" data-view-section="ropaw" class="on-left">
                 </article>
     </aside>
+
+    <nav id="menu" data-control="menu" class="icons">
+            <a href="#" data-view-section="index" data-icon="home" >INDEX</a>
+            <a href="#" data-view-section="usuarios" data-icon="user" >USER</a>
+            <a href="#" data-view-section="men" data-icon="star" >MEN</a>
+            <a href="#" data-view-section="women" data-icon="heart" >WOMEN</a>
+    </nav>
+
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
             Lungo.init({
                     name: 'rvca',
-                    resources:['menu.html','datos.html','men.html','women.html']
-                });
+                    resources:['menu.html','datos.html','men.html','women.html','accesorios.html','ropa.html','usuarios.html','catalogo.html']
+            });
+        
+            Lungo.dom('#botonentrar').on('click', function(event){ 
+                var usuario=$$("#txtusuario").val();
+                var password=$$("#txtpassword").val();
+                var url="http://localhost/diplomado/proyecto/Usuarios.php";
+                var data={Usuario:usuario,Password:password};
+                var respuesta=function(resultado){
+                    if(resultado=="Usuario encontrado")
+{
+
+    Lungo.Router.section("dos");
+}
+                }
+
+            Lungo.Service.post(url,data,respuesta);
+                
+            });        
+            Lungo.dom('#botonbackmen').on('click', function(event){ 
+    Lungo.Router.section("men");
+            });   
+
+            Lungo.dom('#botonbackmen2').on('click', function(event){ 
+    Lungo.Router.section("men");
+            });         
+            Lungo.dom('#botonbackwomen').on('click', function(event){ 
+    Lungo.Router.section("women");
+            });    
+            Lungo.dom('#botonbackwomen2').on('click', function(event){ 
+    Lungo.Router.section("women");
+            });   
+            Lungo.dom('#botoninicio').on('click', function(event){ 
+    Lungo.Router.section("menu");
+            });   
+            /*  var usuario=$$("#txtusuario"),val();
+                var password=$$("#txtpassword"),val();
+                var url = "http://localhost/diplomado/practicafinal/www/usuarios.php";
+                var data = {Usuario: usuario, Password: password};
+                var parseResponse = function(result){
+                    if(result=="Usuario encontrado")
+                {
+                    Lungo.Router.section("dos");
+                
+                }
+            };
+            Lungo.Service.post(url, data, parseResponse);
+        });*/
         </script>
     </body>
 </html>
